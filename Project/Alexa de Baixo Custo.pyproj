@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>Alexa de Baixo Custo</Name>
     <RootNamespace>Alexa de Baixo Custo</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
