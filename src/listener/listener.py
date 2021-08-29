@@ -33,6 +33,7 @@ class Listener():
         """
         with self.microphone as source:
             self.remove_noise(source)
+            print("Diga algo!")
             audio = self.recognizer.listen(source)
         try:
             content = self.recognizer.recognize_google(audio, language='pt-BR')
