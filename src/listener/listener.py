@@ -5,8 +5,8 @@ class Listener():
     """Responsible by listen everything that the user says
 
     Args:
-        device_index (int, optional): the microphone index in the OS. Defaults to default microphone.
-        noiseless (bool, optional): if the audio recognition should be noiseless or not. Defaults to True.
+        device_index (int, optional): the microphone index in the OS. Defaults to None.
+        noiseless (bool, optional): audio recognition should be noiseless or not. Defaults to True.
     """
 
     def __init__(self, device_index: int = None, noiseless: bool = True):

@@ -30,4 +30,4 @@ jobs:
 
       - name: Analysing the code with pylint
         run: |
-          pylint src --exit-zero
+          pylint --disable=C0114 src
