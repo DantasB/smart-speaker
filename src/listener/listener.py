@@ -16,7 +16,7 @@ class Listener():
         self.microphone = sr.Microphone(self.device_index)
         self.noiseless = noiseless
 
-    def noiseless(self, audio_source: sr.Microphone) -> None:
+    def remove_noise(self, audio_source: sr.Microphone) -> None:
         """ Adjusts the ambient noise
 
         Args:
@@ -32,7 +32,7 @@ class Listener():
             str: the content listened by the google recognizer
         """
         with self.microphone as source:
-            self.noiseless(source)
+            self.remove_noise(source)
             audio = self.recognizer.listen(source)
         try:
             content = self.recognizer.recognize_google(audio, language='pt-BR')
