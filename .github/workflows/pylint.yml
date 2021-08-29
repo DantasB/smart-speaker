@@ -11,8 +11,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install audio dependencies
+      - name: Install OS dependencies
         run: |
+          sudo apt update && sudo apt upgrade
           sudo apt install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg
 
       - name: Set up Python 3.9
