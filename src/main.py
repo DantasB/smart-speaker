@@ -5,7 +5,7 @@ from speaker.speaker import Speaker
 
 if __name__ == "__main__":
     workfolder = generate_workfolder()
-    speaker = Speaker(workfolder)
+    speaker = Speaker(workfolder.name)
     listener = Listener()
 
     while True:
