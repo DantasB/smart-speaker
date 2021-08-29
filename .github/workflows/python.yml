@@ -13,7 +13,7 @@ jobs:
 
       - name: Install audio dependencies
         run: |
-          sudo apt install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg libav-tools
+          sudo apt install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
