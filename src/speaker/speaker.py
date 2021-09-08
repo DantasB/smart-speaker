@@ -1,7 +1,6 @@
+import os
 from gtts import gTTS
 from playsound import playsound
-from datetime import datetime as dt
-import os
 
 class Speaker():
     """Instantiate a google tts speaker
