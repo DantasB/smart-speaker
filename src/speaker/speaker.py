@@ -1,6 +1,7 @@
 from gtts import gTTS
 from playsound import playsound
-
+from datetime import datetime as dt
+import os
 
 class Speaker():
     """Instantiate a google tts speaker
@@ -34,3 +35,4 @@ class Speaker():
         audio_file = self.workfolder + 'tmp.mp3'
         tts.save(audio_file)
         playsound(audio_file)
+        os.remove(audio_file)
