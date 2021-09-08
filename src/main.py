@@ -23,4 +23,3 @@ if __name__ == "__main__":
             speaker.play_audio(speaker.create_audio(content))
             break
     delete_workfolder(workfolder)
-        
