@@ -1,8 +1,8 @@
 import os
+import dotenv
 from shared_library.shared_library import generate_workfolder, delete_workfolder
 from listener.listener import Listener
 from speaker.speaker import Speaker
-import dotenv
 
 dotenv.load_dotenv()
 
