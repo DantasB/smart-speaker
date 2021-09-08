@@ -1,9 +1,9 @@
+import os
 from shared_library.shared_library import generate_workfolder, delete_workfolder
 from listener.listener import Listener
 from speaker.speaker import Speaker
-
-import os
 import dotenv
+
 dotenv.load_dotenv()
 
 ACTIVATION_WORD = os.environ.get("ACTIVATION_WORD")
