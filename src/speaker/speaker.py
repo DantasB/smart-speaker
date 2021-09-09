@@ -1,6 +1,6 @@
+import os
 from gtts import gTTS
 from playsound import playsound
-
 
 class Speaker():
     """Instantiate a google tts speaker
@@ -34,3 +34,4 @@ class Speaker():
         audio_file = self.workfolder + 'tmp.mp3'
         tts.save(audio_file)
         playsound(audio_file)
+        os.remove(audio_file)

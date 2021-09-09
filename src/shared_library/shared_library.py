@@ -1,6 +1,5 @@
 import tempfile
 
-
 def generate_workfolder() -> tempfile.TemporaryDirectory:
     """Generates a workfolder
 
