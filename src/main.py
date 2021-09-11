@@ -21,5 +21,6 @@ if __name__ == "__main__":
         if content.startswith(ACTIVATION_WORD):
             speaker.play_audio(speaker.create_audio("como posso ajudar?"))
             speaker.play_audio(speaker.create_audio(content))
+            não funcione
             break
     delete_workfolder(workfolder)
