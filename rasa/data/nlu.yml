@@ -1,0 +1,40 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - olá
+    - oi
+    - bom dia
+    - boa tarde
+    - boa noite
+    - salve
+    - fala
+    - coe
+
+- intent: goodbye
+  examples: |
+    - adeus
+    - até mais
+    - até mais tarde
+    - tchau
+    - falou
+    - valeu
+    - obrigado
+    - muito obrigado
+
+- intent: affirm
+  examples: |
+    - sim
+    - aham
+    - claro
+    - certeza
+    - pode ser
+    - correto
+    - que horas são
+
+- intent: deny
+  examples: |
+    - não
+    - nunca
+    - acho que não
